@@ -8,6 +8,14 @@ Ao iniciar, verifico se as premissas estão sendo satisfeitas, percorro as duas 
 
 Com o ranking montado, procuro o maior valor dele, faço a verificação se existe o empate e retorno o valor esperado.
 
+Além disso, adicionei **4 cenários extras**  aos testes:
+- `test_scenario_eight`: Verifica o limite de CS's em folga de acordo com as premissas
+- `test_scenario_nine`: Testa o caso onde o cliente possui score maior que todos os CS's disponíveis
+- `test_scenario_ten`: Verifica o limite de CS's inseridos de acordo com as premissas
+- `test_scenario_eleven`: Verifica o limite de Customers inseridos de acordo com as premissas
+
+**Agradeço a oportunidade!**
+
 ## Guideline do desafio
 
 ## Nossas expectativas
