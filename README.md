@@ -2,9 +2,17 @@
 
 ## Solução proposta
 
+Para resolver esse problema, levei em consideração a otimização evitando gerar uma `Complexidade de Algoritmo O(n^2)`.
+
+Ao iniciar, verifico se as premissas estão sendo satisfeitas, percorro as duas listas fazendo o somatório de incidências positivas (quando um CS atende um Customer) e armazenando na variável ranking (Hash).
+
+Com o ranking montado, procuro o maior valor dele, faço a verificação se existe o empate e retorno o valor esperado.
+
 ## Guideline do desafio
+
 ## Nossas expectativas
-A equipe de engenharia da RDStation tem alguns princípios onde baseamos nosso trabalho diário. Um deles é: Projete seu código para ser mais fácil de entender, não mais fácil de escrever. 
+
+A equipe de engenharia da RDStation tem alguns princípios onde baseamos nosso trabalho diário. Um deles é: Projete seu código para ser mais fácil de entender, não mais fácil de escrever.
 
 Portanto, para nós é mais importante um código de fácil leitura do que um que utilize recursos arquitetados complexos e desnecessários.
 O que gostariamos de ver:
@@ -14,7 +22,7 @@ O que gostariamos de ver:
 - Código que se preocupa com a performance (Complexidade de Algoritmo)
 - O seu código deve cobrir todo os casos de usos presentes no README, mesmo que não haja um teste implementado para tal.
 - Você deve enviar o código-fonte da solução para nós como um arquivo contendo apenas a solução de código ou
- pode fazer o upload da solução para repositórios públicos (GitHub, BitBucket, etc) desde que nos envie o último commit
+  pode fazer o upload da solução para repositórios públicos (GitHub, BitBucket, etc) desde que nos envie o último commit
 - Testes. Você pode adicionar novos testes, mas sem alterar o pacote original
 
 ## O Desafio - CustomerSuccess Balancing
@@ -35,7 +43,6 @@ Se temos 6 clientes com os seguintes níveis: 20, 30, 35, 40, 60, 80 e dois CSs 
 - 60 e 80 para o CS de nível 100
 
 Sendo `n` o número de CSs, `m` o número de clientes e `t` o número de abstenções de CSs, calcular quais clientes serão atendidos por quais CSs de acordo com as regras apresentadas.
-
 
 ### Premissas
 
@@ -59,7 +66,6 @@ A função `customerSuccessBalancing()` recebe 3 parâmetros:
 - id e nivel de experiência dos Clientes
 - ids dos CustomerSuccess indisponíveis
 
-
 ## Output
 
 O resultado esperado deve ser o id do CS que atende mais clientes. Com esse valor a empresa poderá fazer um plano de ação para contratar mais CS's de um nível aproximado.
@@ -75,20 +81,23 @@ Para este exemplo o retorno deve ser `1`, que é o id do CS que atende 4 cliente
 ```
 1
 ```
+
 ## Choose your weapon:
+
 Nós vamos aceitar o teste em qualquer uma das linguagens abaixo.
+
 ### Testes já implementados
-- [Ruby](ruby/README.md) 
+
+- [Ruby](ruby/README.md)
 - [JavaScript](javascript/README.md)
 - [Go](go/README.md)
-  
 
 ### Você precisa implementar os testes
+
 - Java
 - C#
 - Python
-  
 
 ## Download
-Você pode fazer o download do desafio aqui para as linguagens que já tem o teste implementado: [Link](./challenge.zip)
 
+Você pode fazer o download do desafio aqui para as linguagens que já tem o teste implementado: [Link](./challenge.zip)
